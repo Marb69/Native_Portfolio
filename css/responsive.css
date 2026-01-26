@@ -1,0 +1,117 @@
+
+:root{
+
+    --primary-color:#009EA3;
+    --secondary-color:#171717;
+    --bg-color:#101010;
+    --h-color:#989C9C;
+    --sub-color:#989C9C;
+
+}
+
+@media (min-width:430px) {
+    
+
+    .navbrand svg{
+
+        width: 45px;
+        height: 45px;
+        right: 22px
+    }
+
+    .navbrand{
+
+        font-size: 1.7rem;
+    }
+    #menu svg{
+
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+@media (min-width:769px) {
+    
+
+
+
+
+}
+
+@media (min-width:1024px) {
+    
+
+    #menu {
+
+        display: none;
+    }
+
+    .navbrand svg{
+
+        width: 60px;
+        height: 60px;
+        top: -10px;
+    }
+
+    .navbrand{
+
+        margin-left: 30px;
+        font-size: 2rem;
+    }
+
+    .navbar{
+
+        flex-direction: row-reverse;
+        margin: 12px auto;
+        
+    }
+
+    .container{
+
+        max-width: 1800px;
+        padding:18px;
+    }
+
+    .nav{
+
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        height: auto;
+        align-items: center;
+        padding: 0px;
+          justify-content: center;
+         
+         
+    }
+
+    .navlink{
+
+        flex-direction: row;
+        padding: 14px 34px;
+        background-color: var(--secondary-color);
+        border-radius: 50px;
+        gap: 44px;
+       
+    }
+
+        .navlink li a{
+
+            font-size: 1.2rem;
+        }
+
+    .navbar .contact-btn{
+
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .nav .contact-btn{
+
+        display: none;
+    }
+
+    
+}
