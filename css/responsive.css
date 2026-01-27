@@ -1,117 +1,196 @@
-
-:root{
-
-    --primary-color:#009EA3;
-    --secondary-color:#171717;
-    --bg-color:#101010;
-    --h-color:#989C9C;
-    --sub-color:#989C9C;
-
+:root {
+  --primary-color: #009ea3;
+  --secondary-color: #171717;
+  --bg-color: #101010;
+  --h-color: #989c9c;
+  --sub-color: #989c9c;
 }
 
-@media (min-width:430px) {
-    
+@media (min-width: 430px) {
+  .navbrand svg {
+    width: 45px;
+    height: 45px;
+    right: 22px;
+  }
 
-    .navbrand svg{
+  .navbrand {
+    font-size: 1.7rem;
+  }
+  #menu svg {
+    width: 30px;
+    height: 30px;
+  }
 
-        width: 45px;
-        height: 45px;
-        right: 22px
-    }
-
-    .navbrand{
-
-        font-size: 1.7rem;
-    }
-    #menu svg{
-
-        width: 30px;
-        height: 30px;
-    }
+  .container {
+    max-width: 560px;
+  }
 }
 
+@media (min-width: 769px) {
+  .hero .context .text .cta {
+    flex-direction: row;
+  }
 
+  .container {
+    max-width: 815px;
+  }
 
-@media (min-width:769px) {
-    
+  .hero .context .text h1 {
+    font-size: 2.5rem;
+  }
 
+  .hero .context .text p {
+    font-size: 1.1rem;
+  }
 
+  .nav {
+    width: 60%;
+  }
 
+  .about-me .stats {
+    flex-direction: row;
+  }
 
+  .about-me .stats .stat-con-two {
+    flex-direction: row;
+  }
+
+  .about-me .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me .image img {
+    max-width: 500px;
+  }
+
+  .about-me .content-right .context {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-me .content-right .context p {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
 }
 
-@media (min-width:1024px) {
-    
+@media (min-width: 1024px) {
+  #menu {
+    display: none;
+  }
 
-    #menu {
+  .navbrand svg {
+    width: 60px;
+    height: 60px;
+    top: -10px;
+  }
 
-        display: none;
-    }
+  .navbrand {
+    margin-left: 30px;
+    font-size: 2rem;
+  }
 
-    .navbrand svg{
+  .navbar {
+    flex-direction: row-reverse;
+    margin: 12px auto;
+    max-width: 1800px;
+  }
 
-        width: 60px;
-        height: 60px;
-        top: -10px;
-    }
+  .container {
+    max-width: 1800px;
+    padding: 18px;
+  }
 
-    .navbrand{
+  .nav {
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    height: auto;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+  }
 
-        margin-left: 30px;
-        font-size: 2rem;
-    }
+  .navlink {
+    flex-direction: row;
+    padding: 14px 34px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    gap: 44px;
+  }
 
-    .navbar{
+  .navlink li a {
+    font-size: 1rem;
+  }
 
-        flex-direction: row-reverse;
-        margin: 12px auto;
-        
-    }
+  .navbar .contact-btn {
+    display: block;
+    font-size: 1.1rem;
+    padding: 11px 18px;
+  }
 
-    .container{
+  .nav .contact-btn {
+    display: none;
+  }
 
-        max-width: 1800px;
-        padding:18px;
-    }
+  .hero {
+    flex-direction: row-reverse;
+  }
 
-    .nav{
+  .hero .context .text h1 {
+    font-size: 4em;
+    max-width: 800px;
+  }
 
-        position: static;
-        flex-direction: row;
-        background-color: transparent;
-        height: auto;
-        align-items: center;
-        padding: 0px;
-          justify-content: center;
-         
-         
-    }
+  .hero .context .text p {
+    font-size: 1.2rem;
+    max-width: 500px;
+  }
+  .hero .context .text {
+    position: static;
+    text-align: start;
+    align-items: start;
+    gap: 24px;
+  }
 
-    .navlink{
+  .hero .context .text .cta a {
+    width: auto;
+    padding: 12px 18px;
+  }
+  .hero .context {
+    display: flex;
+    align-items: center;
+  }
 
-        flex-direction: row;
-        padding: 14px 34px;
-        background-color: var(--secondary-color);
-        border-radius: 50px;
-        gap: 44px;
-       
-    }
+  .hero .context .text .fa-brands-group {
+    font-size: 2rem;
+  }
 
-        .navlink li a{
+  .about-me-section {
+    background-color: #1a1919;
+    padding-top: 24px;
+  }
+  .about-me {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
 
-            font-size: 1.2rem;
-        }
+  .about-me .stats {
 
-    .navbar .contact-btn{
+    flex-direction: column;
+  }
 
-        display: block;
-        font-size: 1.2rem;
-    }
+  .about-me .stats .stat-con-two{
 
-    .nav .contact-btn{
+    flex-direction: row-reverse;
+  }
+  .about-me .content-right .journey p {
+    font-size: 0.95rem;
+  }
 
-        display: none;
-    }
-
-    
+  .about-me .image img {
+    max-width: 600px;
+  }
 }
