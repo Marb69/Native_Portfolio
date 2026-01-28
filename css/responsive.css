@@ -32,7 +32,7 @@
   }
 
   .container {
-    max-width: 815px;
+    max-width: 789px;
   }
 
   .hero .context .text h1 {
@@ -73,6 +73,27 @@
     font-size: 1.1rem;
     text-align: justify;
   }
+
+  .what-i-do .cards{
+
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .skill .context h3{
+
+    font-size: 3rem;
+  }
+
+    .skill .context p{
+
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .skill .context{
+
+      align-items: center;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -189,8 +210,26 @@
   .about-me .content-right .journey p {
     font-size: 0.95rem;
   }
+ .about-me .content-right .context{
 
+  flex-wrap: wrap;
+}
   .about-me .image img {
     max-width: 600px;
   }
+
+  .what-i-do .cards{
+
+    grid-template-columns: repeat(4,1fr);
+  }
+
+   .skill .context{
+
+    align-items: start;
+   }
+
+      .skill .context p{
+
+        text-align: start;
+      }
 }
