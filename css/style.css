@@ -424,12 +424,21 @@ body {
     font-weight: 500;
     
 }
+.skill{
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 18px;
+
+}
 .skill .context {
 
   display: flex;
   flex-direction: column;
   gap: 14px;
+  flex: 1;
 }
 .skill .context h3{
 
@@ -456,4 +465,74 @@ body {
     text-decoration: none;
     text-align: center;
     border-radius: 4px;
+    margin-top:14px ;
+}
+
+.skill .skill-set{
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+   
+}
+.skill .skill-set nav{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+
+
+}
+
+.skill .skill-set nav span{
+
+    cursor: pointer;
+    color: var(--primary-color);
+        font-weight: 500;
+}
+
+ .skill-wrapper .skills{
+
+
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
+      margin-top: 14px;
+      align-items: center;
+      justify-content: center;
+
+}
+
+.skill-wrapper .skills .item{
+
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    border: 1px solid var(--border-color);
+}
+
+.skill-wrapper .skills .item i{
+
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+.skill-wrapper .skills .item span{
+
+    color: var(--h-color);
+  
+}
+
+
+.skill-wrapper .skills{
+
+    display: none;
+}
+
+.skill-wrapper .skills.active{
+
+    display: grid;
 }

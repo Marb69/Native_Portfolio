@@ -79,6 +79,11 @@
     grid-template-columns: repeat(2,1fr);
   }
 
+  .skill{
+
+  align-items: start;
+  }
+
   .skill .context h3{
 
     font-size: 3rem;
@@ -92,8 +97,31 @@
 
     .skill .context{
 
-      align-items: center;
+      align-items: start;
     }
+
+    
+      .skill .skill-set nav{
+
+        justify-content: start;
+        gap: 24px;
+      }
+
+      .skill .context p{
+
+        text-align: start;
+      }
+
+    .skill .skill-set nav span{
+
+      font-size: 1.1rem;
+    }
+
+    
+.skill-wrapper .skills .item{
+
+  flex-direction: row;
+}
 }
 
 @media (min-width: 1024px) {
@@ -232,4 +260,10 @@
 
         text-align: start;
       }
+
+      .skill{
+
+        flex-direction: row-reverse;
+      }
+
 }
