@@ -74,54 +74,73 @@
     text-align: justify;
   }
 
-  .what-i-do .cards{
-
-    grid-template-columns: repeat(2,1fr);
+  .what-i-do .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .skill{
-
-  align-items: start;
+  .skill {
+    align-items: start;
   }
 
-  .skill .context h3{
-
+  .skill .context h3 {
     font-size: 3rem;
   }
 
-    .skill .context p{
+  .skill .context p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-      font-size: 1.2rem;
-      text-align: center;
+  .skill .context {
+    align-items: start;
+  }
+
+  .skill .skill-set nav {
+    justify-content: start;
+    gap: 24px;
+  }
+
+  .skill .context p {
+    text-align: start;
+  }
+
+  .skill .skill-set nav span {
+    font-size: 1.1rem;
+  }
+
+  .skill-wrapper .skills .item {
+    flex-direction: row;
+  }
+
+  .projects-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project h3 {
+    font-size: 3rem;
+  }
+
+  .contact .context {
+    flex-direction: row;
+  }
+
+  .contact .context .image-wrapper .image {
+    height: 30vh;
+  }
+  .contact .contact-form .form{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    .contact .contact-form .form .message{
+
+     grid-column: span 2;
     }
 
-    .skill .context{
+    .contact-section{
 
-      align-items: start;
+      height: 100vh;
+      display: flex;
+      align-items: center;
     }
-
-    
-      .skill .skill-set nav{
-
-        justify-content: start;
-        gap: 24px;
-      }
-
-      .skill .context p{
-
-        text-align: start;
-      }
-
-    .skill .skill-set nav span{
-
-      font-size: 1.1rem;
-    }
-
-    
-.skill-wrapper .skills .item{
-
-  flex-direction: row;
-}
 }
 
 @media (min-width: 1024px) {
@@ -227,43 +246,55 @@
   }
 
   .about-me .stats {
-
     flex-direction: column;
   }
 
-  .about-me .stats .stat-con-two{
-
+  .about-me .stats .stat-con-two {
     flex-direction: row-reverse;
   }
   .about-me .content-right .journey p {
     font-size: 0.95rem;
   }
- .about-me .content-right .context{
-
-  flex-wrap: wrap;
-}
+  .about-me .content-right .context {
+    flex-wrap: wrap;
+  }
   .about-me .image img {
     max-width: 600px;
   }
 
-  .what-i-do .cards{
-
-    grid-template-columns: repeat(4,1fr);
+  .what-i-do .cards {
+    grid-template-columns: repeat(4, 1fr);
   }
 
-   .skill .context{
-
+  .skill .context {
     align-items: start;
-   }
+  }
 
-      .skill .context p{
+  .skill .context p {
+    text-align: start;
+  }
 
-        text-align: start;
-      }
+  .skill {
+    flex-direction: row-reverse;
+  }
 
-      .skill{
+  .skill-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
 
-        flex-direction: row-reverse;
-      }
+  .projects-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
+  .contact{
+
+    flex-direction: row;
+  }
+
+  .contact .contact-form .input-group .ctc-submit{
+
+    width: auto;
+  }
 }
