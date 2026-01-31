@@ -235,7 +235,7 @@
     font-size: 2rem;
   }
 
-  .about-me-section {
+  #about-me-section {
     background-color: #1a1919;
     padding-top: 24px;
   }
@@ -278,7 +278,7 @@
     flex-direction: row-reverse;
   }
 
-  .skill-section {
+  #skill-section {
     height: 70vh;
     display: flex;
     align-items: center;
@@ -297,4 +297,11 @@
 
     width: auto;
   }
+
+  #contact-section{
+
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 }
